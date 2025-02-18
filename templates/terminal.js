@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             term.write("\r\n"); // New line before sending output
 
             try {
-                const response = await fetch("http://localhost:5000/interact", {
+                const response = await fetch("http://192.168.1.8:5000/interact", {
                     method: "POST",
                     body: new URLSearchParams({ command: commandBuffer }),
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
